@@ -18,7 +18,8 @@ alias gsu='git submodule update --init --recursive'
 alias gl='git pull'
 alias gpr='git pull --rebase'
 alias gpp='git pull && git push'
-alias gup='git fetch && git rebase'
+alias gfup='git fetch upstream'
+alias gfor='git fetch origin'
 alias gp='git push'
 alias gpo='git push origin'
 alias gpu='git push --set-upstream'
@@ -76,5 +77,5 @@ if [ -z "$EDITOR" ]; then
         ;;
     esac
 else
-    alias gd="git diff | $EDITOR"
+    alias gd="git diff"
 fi
